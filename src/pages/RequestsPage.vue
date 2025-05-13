@@ -5,15 +5,6 @@ import CancelReasonModal from '../components/CancelReasonModal.vue'
 
 const route = useRoute()
 
-const formattedDate = computed(() => {
-  const date = new Date(route.params.date as string)
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
-})
-
 const bookings = reactive([
   {
     name: 'Obansa',
