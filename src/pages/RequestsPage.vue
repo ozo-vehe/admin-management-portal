@@ -3,8 +3,6 @@ import { useRoute } from 'vue-router'
 import { computed, reactive, ref } from 'vue'
 import CancelReasonModal from '../components/CancelReasonModal.vue'
 
-const route = useRoute()
-
 const bookings = reactive([
   {
     name: 'Obansa',
