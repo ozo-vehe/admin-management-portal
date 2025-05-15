@@ -12,7 +12,7 @@ import BookingAidPage from '../pages/BookingAidPage.vue'
 // import Logout from '../pages/Logout.vue'
 
 const routes = [
-  { path: '/booking-calendar', component: BookingCalenderPage },
+  { path: '/', component: BookingCalenderPage },
   { path: '/requests', component: RequestsPage },
   { path: '/downloads', component: DownloadsPage },
   { path: '/booking-aid', component: BookingAidPage },

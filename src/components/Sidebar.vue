@@ -6,7 +6,7 @@
 
     <nav class="flex-1 py-4">
       <router-link
-        to="/booking-calendar"
+        to="/"
         class="flex items-center px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600"
         active-class="bg-blue-50 text-blue-600"
       >

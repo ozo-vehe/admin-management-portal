@@ -30,10 +30,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-<<<<<<< HEAD
   background-color: white;
-=======
->>>>>>> d7dcd381627c310e61f887417706fdcdf2450cdc
 }
 
 h1 {
@@ -62,24 +59,14 @@ button:focus-visible {
 
 .card {
   padding: 2em;
-<<<<<<< HEAD
 } */
 
 /* #app {
-=======
-}
-
-#app {
->>>>>>> d7dcd381627c310e61f887417706fdcdf2450cdc
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-<<<<<<< HEAD
 } */
-=======
-}
->>>>>>> d7dcd381627c310e61f887417706fdcdf2450cdc
 
 @media (prefers-color-scheme: light) {
   :root {
