@@ -1,0 +1,109 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-efl-green-20: #d1ebdb;
+  --color-efl-green-40: #a1d6b5;
+  --color-efl-green-60: #72c291;
+  --color-efl-green-80: #44ad6c;
+  --color-efl-green-base: #159947;
+  --color-efl-blue-20: #ced4e0;
+  --color-efl-blue-40: #a1abc2;
+  --color-efl-blue-60: #7181a3;
+  --color-efl-blue-80: #425987;
+  --color-efl-blue-base: #101d6a;
+}
+
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('../assets/font/satoshi/WEB/fonts/Satoshi-Regular.ttf');
+}
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('../assets/font/satoshi/OTF/Satoshi-Bold.otf');
+}
+
+body {
+  font-family: 'Satoshi-Regular', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  font-family: 'Satoshi-Regular', sans-serif;
+}
+
+.toast-container .toast {
+  background-color: black;
+  padding: 10px 10px 0px 0px;
+  align-items: start;
+}
+
+.vuecal__headings {
+  background-color: white !important;
+}
+
+.vuecal__weekdays-headings {
+  margin-top: 10px;
+  padding: 5px 0px;
+  background: #e5e8eb !important;
+}
+.vuecal__weekday {
+  padding-left: 10px !important;
+}
+
+.vuecal {
+  /* --vuecal-secondary-color: #dce0e5 !important; */
+  --vuecal-secondary-color: none !important;
+  --vuecal-primary-color: #dce0e5 !important;
+}
+
+.vuecal__scrollable-wrap {
+  border: none !important;
+}
+.vuecal__body {
+  margin-top: 35px;
+}
+
+.vuecal__weekday, .vuecal__cell {
+  font-weight: 700;
+  padding: 10px;
+  justify-content: start !important;
+  align-items: start !important;
+}
+
+.vuecal__cell--selected {
+  border: thin solid #dce0e5;
+  box-shadow: inset 0 0 0 2px #668aff !important;
+  background: #668aff10
+}
+
+/* Downloads Calendar Edits */
+.downloads .vuecal__title-bar,
+.booking_aid .vuecal__title-bar {
+  height: 40px !important;
+  background: white !important;
+}
+.downloads .vuecal__weekdays-headings,
+.booking_aid .vuecal__weekdays-headings {
+  margin-top: 10px;
+  padding: 5px 0px;
+  background: white !important;
+}
+
+.downloads .vuecal__weekday-day,
+.booking_aid .vuecal__weekday-day {
+  font-weight: bolder !important;
+}
+
+.downloads .vuecal__cell,
+.booking_aid .vuecal__cell {
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.booking_aid .vuecal__cell--selected {
+  background: #5598ff;
+  border: thin solid #5598ff;
+  box-shadow: inset 0 0 0 2px #5598ff !important;
+  color: white;
+}
+

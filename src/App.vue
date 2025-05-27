@@ -1,21 +1,22 @@
-<template>
-  <div class="flex w-full h-screen overflow-hidden bg-white">
-    <Sidebar />
+<script setup lang="ts">
+import { RouterView } from 'vue-router';
+import { useBookingStore } from './stores/booking';
+import { onMounted } from 'vue';
 
-    <main class="flex-1 overflow-y-auto h-full">
-      <router-view />
-    </main>
-  </div>
+const booking_store = useBookingStore();
+const { fetchAllBookings } = booking_store;
+
+onMounted(async () => {
+  console.log('Fetching bookings...');
+  await fetchAllBookings();
+  console.log('Bookings fetched');
+})
+</script>
+
+<template>
+  <main>
+    <RouterView />
+  </main>
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-import Sidebar from './components/Sidebar.vue';
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    Sidebar
-  }
-});
-</script>
+<style scoped></style>
